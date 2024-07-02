@@ -1,2 +1,2 @@
 # Flask_app
-# if things are missing,  pip install flask
+# if things are missing,  env\Scripts\activate - pip install flask
