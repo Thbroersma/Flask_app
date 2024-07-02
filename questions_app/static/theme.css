@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(44, 47, 80) !important;
+}
+.navbar {
+  background-color: rgb(235, 136, 8);
+  height: 20px !important;
+  width: 100%;
+}
+.nav {
+  display: inline-block !important;
+  margin: 5px;
+}
+.nav-link {
+  color: white !important;
+}
