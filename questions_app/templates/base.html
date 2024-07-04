@@ -21,20 +21,21 @@
         <ul class="nav navbar-nav">
           <li class=""><a href="{{url_for('index') }}">Home</a></li>
           {% if not user %}
-          <li><a href="{{ url_for('login') }}">Login</a></li>
-          <li><a href="{{ url_for('register') }}">Register</a></li>
-          {% endif %}
-          {% if user and user['expert'] == 0 and user['admin'] == 0 %}
-          <li><a href="{{ url_for('ask') }}">Ask Question</a></li>
-          {% endif %}
-          {% if user and user['export'] == 1 %}
-          <li><a href="{{ url_for('answers') }}">Answer Questions</a></li>
-          {% endif %}
-          {% if user and user['admin'] == 1 %}
-          <li><a href="{{ url_for('users') }}">User Setup</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
           {% endif %}
           {% if user %}
-          <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            <li><a href="{{ url_for('ask') }}">Ask Question</a></li>
+          {% endif %}
+          {% if user %}
+            <li><a href="{{ url_for('answers') }}">Answer Questions</a></li>
+          {% endif %}
+         <!--['expert'] == 1-->
+          {% if user %}
+            <li><a href="{{ url_for('users') }}">User Setup</a></li>
+          {% endif %}
+          {% if user %}
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
           {% endif %}
         </ul>
       </div><!--/.nav-collapse -->

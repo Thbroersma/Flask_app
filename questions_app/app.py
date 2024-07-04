@@ -94,5 +94,14 @@ def logout():
     session.pop('user', None)
     return redirect('/')
 
+@app.route('/promote/<user_id>')
+def promote(user_id):
+    user = get_current_user()
+
+    db = get_db()
+    db.execute("update users set expert == 1 where id = ?", [user_id])
+    db.commit()
+
+    return redirect(url_for('users'))
 
 app.run(debug=True)
