@@ -1,15 +1,18 @@
 body {
-  background-color: rgb(44, 47, 80) !important;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
-.navbar {
-  background-color: rgb(235, 136, 8);
-  height: 20px !important;
-  width: 100%;
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
 }
-.nav {
-  display: inline-block !important;
-  margin: 5px;
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
 }
-.nav-link {
-  color: white !important;
+
+.theme-showcase .navbar .container {
+  width: auto;
 }
